@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	font-size: 16px;
+	background-color: royalblue;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+}
+.kwadrat {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-image: url('https://cdn.pixabay.com/photo/2023/06/10/15/24/insect-8054262_1280.jpg');
+    background-size: cover;
+    background-position: center;
+	border-radius: 50%;
+	transition: background-color 0.3s, border-radius 0.3s, transform 0.3s;
+}
+.kwadrat:hover {
+	
+	background-color: #da0303;
+	transform:rotateY(180deg);
+}
